@@ -21,6 +21,8 @@ from time import time
 #from tensorflow.keras import backend as K
 import time
 import sklearn
+from sklearn.metrics import confusion_matrix
+from sklearn.utils.multiclass import unique_labels
 
 
 classifiers = {
