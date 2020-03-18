@@ -17,7 +17,7 @@ import requests, zipfile, io, os, shutil
 def init(force_download=False):
     if force_download or not os.path.exists("local"):
         print("replicating local resources")
-        dirname = course_id+"-master/Modulo3"
+        dirname = course_id+"-master/Modulo4"
         if os.path.exists(dirname):
             shutil.rmtree(dirname)
         r = requests.get(zip_file_url)
